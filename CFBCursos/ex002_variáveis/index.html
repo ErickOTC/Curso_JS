@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB cursos JS</title>
+</head>
+<body>
+    <script>
+        /* 
+        Variáveis 
+        guardar valores reais e inteiros
+        */
+
+        document.write('<h1>Variáveis</h1>')
+
+        var nome, idade, curso, ano, cidade
+        nome = 'Erick'
+        idade= 22
+        curso = 'JS'
+        ano = 2022
+        cidade = 'SP'
+        document.write(`Nome: ${nome}<br>`)
+        document.write(`Idade: ${idade}<br>`)
+        document.write(`Curso: ${curso}<br>`)
+        document.write('Olá '+nome+'<br>Vi que vc tem '+idade+' anos e está fazendo o curso de '+curso+'!')
+        
+        document.write('<h1>Concatenação</h1>')
+        document.write('cidade: '+cidade+' string<br>ano: '+ano+' number<br>idade: '+idade+' number<br>')
+        document.write('<h2>string+number sem parênteses</h2>')
+        document.write("document.write(cidade+' '+ano+idade)<br>")
+        document.write('Resultado: '+cidade+' '+ano+idade)
+        document.write('<h2>string+number com parênteses</h2>')
+        document.write("document.write(cidade+' '+(ano+idade))<br>")
+        document.write('Resultado: '+cidade+' '+(ano+idade))
+    </script>
+</body>
+</html>

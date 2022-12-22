@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM 2</title>
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="area">
+        <label">Interaja...</label>
+    </div>
+    <hr>
+    <script>
+        var st1=document.getElementById('area') // escopo global
+
+        st1.addEventListener('click',clicar)
+        st1.addEventListener('mouseenter',sobre)
+        st1.addEventListener('mouseout', saiu)
+
+        function clicar(){         
+            st1.innerText='clicou!'
+            st1.style.background='red'
+            st1.style.color='black'
+        }
+        function sobre(){
+            st1.innerHTML='Clique aqui!!!'
+            st1.style.background='grey'
+            st1.style.color='blue'
+        }
+        function saiu(){   
+            st1.innerHTML='Interaja...'
+            st1.style.background='rgb(128, 128, 128)'
+            st1.style.color='aqua'
+        }
+    </script>
+</body>
+</html>

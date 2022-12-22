@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!--DOM 'Document Object Model' 
+        Conjunto de objetos dentro do navegador que da acesso ao componentes internos do website
+        Árvore DOM-->
+
+        <h1>Primeiros passos com DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+        <div class="msg1">Clique em mim</div>
+        <div element id="msg2">Clique em mim 2</div>
+    <script>
+        document.write('Olá, Mundo! <br>')
+        document.write(window.document.characterSet+'<br>')
+        document.write(window.navigator.appName+'<br>')
+        document.write(window.document.URL+'<br>')
+        var paragrafo1=window.document.getElementsByTagName('p')[1]
+        document.write(paragrafo1.innerText+'<br>')
+        document.write(paragrafo1.innerHTML+'<br>')
+        paragrafo1.style.color='blue'
+
+        //Selecionando
+        /* dentro de document
+
+        por Marca  getElementsByTagName()
+        por ID  getElementByID()
+        por Nome  getElementsByName()
+        por Classe  getElementsByClassName()
+
+        por Seletor querySelector()
+                    querySelectorAll()
+
+        */
+
+    </script>
+    
+</body>
+</html>

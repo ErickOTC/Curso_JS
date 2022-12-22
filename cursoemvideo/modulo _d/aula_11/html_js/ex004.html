@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUV</title>
+    <link rel="stylesheet" href="script01.js">
+</head>
+<body>
+    <H1>Calculando o t</H1>
+    <label>Espaço final: <input type="number" id="txtSf"> m</label><br>
+    <label>Espaço inicial: <input type="number" id="txts0"> m</label> <br>
+    <label>Velocidade do carro: <input type="number" id="txtV"> m/s</label><br>
+    <div id="resultadot">
+
+    </div>
+    <script>
+
+        function calculart(){
+            var Sf = Number(txtSf.value)
+            var s0 = Number(txts0.value)
+            var V = Number(txtV.value)
+            var delsta_S = Sf-s0
+            var t = delsta_S/V
+            resultadot.innerHTML = `<p>O tempo gasto (t) é de ${t}s</p>`
+        }
+
+    </script>
+    <input type="button" value="Calcular" onclick="calculart()"> <br>
+    <a href="ex001.html"><input type="button" id="menu" value="Menu"></a>
+</body>
+</html>

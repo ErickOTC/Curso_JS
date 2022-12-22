@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>And e Or</title>
+</head>
+<body>
+    <script>
+    /* 
+    Se
+
+    if(Teste lógico){
+        Se vdd faça isso
+        true = 1
+    }else{
+        se não faça isso
+        false = 0
+    }
+    */
+
+    let num=[Number.parseFloat(prompt('Digite o nmr1')),Number.parseFloat(prompt('Digite o nmr2')),Number.parseFloat(prompt('Digite o nmr3'))]
+   if(num[0]<num[1] && num[0]<num[2]){
+
+        document.write(`Ordem crescente:<br> NMR1:${num[0]}`)
+
+        if(num[1]<num[2]){
+            document.write(`<br> NMR2:${num[1]}`)
+            document.write(`<br> NMR3:${num[2]}`)
+        }else{
+            document.write(`<br> NMR3:${num[2]}`)
+            document.write(`<br> NMR2:${num[1]}`)
+        }
+
+   }else if(num[1]<num[0] && num[1]<num[2]){
+
+        document.write(`Ordem crescente:<br> NMR2:${num[1]}`)
+
+        if(num[0]<num[2]){
+            document.write(`<br> NMR1:${num[0]}`)
+            document.write(`<br> NMR3:${num[2]}`)
+        }else{
+            document.write(`<br> NMR3:${num[2]}`)
+            document.write(`<br> NMR1:${num[0]}`)
+        }
+
+   }else if(num[2]<num[0] && num[2]<num[1]){
+
+        document.write(`Ordem crescente:<br> NMR3:${num[2]}`)
+
+        if(num[0]<num[1]){
+            document.write(`<br> NMR1:${num[0]}`)
+            document.write(`<br> NMR2:${num[1]}`)
+        }else{
+            document.write(`<br> NMR2:${num[1]}`)
+            document.write(`<br> NMR1:${num[0]}`)
+        }
+   }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUV</title>
+    <link rel="stylesheet" href="script01.js">
+</head>
+<body>
+    <H1>Calculando o V</H1>
+    <label>Espaço final: <input type="number" id="txtSf"> m</label><br>
+    <label>Espaço inicial: <input type="number" id="txts0"> m</label> <br>
+    <label>Tempo:<input type="number" id="txtt"></label> s<br>
+    <div id="resultadoV">
+
+    </div>
+    <script>
+
+        function calcularV(){
+            var Sf = Number(txtSf.value)
+            var s0 = Number(txts0.value)
+            var t = Number(txtt.value)
+            var delsta_S = Sf-s0
+            var V = delsta_S/t
+            resultadoV.innerHTML = `<p>A velocidade (V) é de ${V}m/s</p>`
+        }
+
+    </script>
+    <input type="button" value="Calcular" onclick="calcularV()"> <br>
+    <a href="ex001.html"><input type="button" id="menu" value="Menu"></a>
+</body>
+</html>

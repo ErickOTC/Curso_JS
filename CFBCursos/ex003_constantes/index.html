@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constante</title>
+</head>
+<body>
+    <script>
+        // var pode alterar de string para number (variável)
+        // const será uma string ou number e uma vez atribuida não pode ser alterada
+
+        document.write('<h1>Var</h1><h2>podem ter seu valor alterado de string para number e vice e versa</h2>')
+        var variavel="Curso de JS"
+        document.write(variavel+'<br>')
+        variavel = 2022
+        document.write('ano: '+variavel+'<br>')
+
+        document.write('<h1>Const (não variável)</h1><h2>não podem ter seus valores alterados</h2>')
+        const curso="Curso de JS"
+        document.write(curso+'<br>')
+        curso = 2022
+        document.write('ano: '+curso)
+
+        document.write('<p>executamos o mesmo código nos dois e perceba que em cont não aparece o ano.</p>')
+
+    </script>
+</body>
+</html>

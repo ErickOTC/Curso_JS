@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR OU ESTRANGEIRO?</title>
+</head>
+<body>
+    <h1>Nacionalidade Brasileira?</h1>
+    <label>Em qual país você nasceu? <input type="text" name="txtp" id="txtp"></label>
+    <input type="button" value="Nacionalidade" onclick="pais()">
+    <div id="resultado">
+
+    </div>
+    <script>
+        function pais(){
+            var txtp= window.document.querySelector('input#txtp')
+            var nacio = txtp.value
+            var resultado = window.document.querySelector('div#resultado')
+            resultado.innerHTML=`<p>Seu país de origem é ${nacio}</p>`
+            if(nacio.toUpperCase()=='BRASIL'){
+                resultado.innerHTML+=`<p>Você é brasileiro</p>`
+            }else{
+            resultado.innerHTML+=`<p>Você é estrangeiro</p>`
+            }
+        }
+        
+    </script>
+</body>
+</html>

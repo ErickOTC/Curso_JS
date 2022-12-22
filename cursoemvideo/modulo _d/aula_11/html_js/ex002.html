@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUV</title>
+    <link rel="stylesheet" href="script01.js">
+</head>
+<body>
+    <H1>Calculando o S</H1>
+
+    <label>Velocidade do carro: <input type="number" id="txtV"> m/s</label><br>
+    <label>Espaço inicial: <input type="number" id="txts0"> m</label> <br>
+    <label>Tempo:<input type="number" id="txtt"> s</label><br>
+    <div id="resultadoS">
+
+    </div>
+    <script>
+
+        function calcularS(){
+            var V = Number(txtV.value)
+            var s0 = Number(txts0.value)
+            var t = Number(txtt.value)
+            var Sf = s0+V*t
+            resultadoS.innerHTML = `<p>O espaço final (S) é de ${Sf}m</p>`
+        }
+
+    </script>
+    <input type="button" value="Calcular" onclick="calcularS()"> <br>
+    <a href="ex001.html"><input type="button" id="menu" value="Menu"></a>
+</body>
+</html>

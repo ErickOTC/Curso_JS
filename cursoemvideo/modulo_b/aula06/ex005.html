@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template string</title>
+</head>
+<body>
+    <script>/*
+        'Eu estou aprendendo curso' // não faz interpolação
+        'Eu estou aprendendo' + curso // usa concatenação
+        `Eu estou aprendendo ${curso}` // usa template string
+        */
+
+        var nome=window.prompt('Qual é o seu nome?')
+        var idade=window.prompt('Qual é sua idade?')
+        var data_nasc = 2022-idade
+        document.write(`Olá, meu caro aluno <strong>${nome}</strong>, nascido em ${data_nasc}.`) // escrever no body com placeholder
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txt01" id="txt01"> +
+    <input type="number" name="txt02" id="txt02"> <br>
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Subtrair" onclick="subtrair()"> 
+    <div id="result">O resultado vai aparecer aqui!</div>
+
+    <script>
+        function somar(){
+            var txtn1=document.getElementById('txt01') // por ID
+            var txtn2=document.querySelector('input#txt02') // por querySelector
+            var num1= Number(txtn1.value)
+            var num2= Number(txtn2.value)
+            var equa=num1+num2
+            result.innerHTML=`A soma de ${num1} + ${num2} é igual à ${equa}`
+
+        }
+        function subtrair(){
+            var txtn1=document.querySelector('input#txt01') // por querySelector
+            var txtn2=document.getElementById('txt02') // por ID
+            var num1= Number(txtn1.value)
+            var num2= Number(txtn2.value)
+            var equa=num1-num2
+            result.innerHTML=`A subtração de ${num1} - ${num2} é igual à ${equa}`
+        }
+    </script>
+</body>
+</html>

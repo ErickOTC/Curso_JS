@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="sobre()" onmouseout="saiu()">
+        <label">Interaja...</label>
+    </div>
+    <hr>
+    </div>
+    <script>
+        var st2=document.getElementById('area') // escopo global
+
+        function clicar(){         
+            st2.innerText='clicou!!!!!!!!!'
+            st2.style.background='blue'
+            st2.style.color='green'
+        }
+        function sobre(){
+            st2.innerHTML='Clique aqui!!!'
+            st2.style.background='grey'
+            st2.style.color='blue'
+        }
+        function saiu(){
+            // var dentro de function não é correto por questão de escopo (ultilização)
+            var st2=document.getElementById('area') // essa variável só funciona dentro da função saiu()
+            st2.innerHTML='Interaja...'
+            st2.style.background='rgb(128, 128, 128)'
+            st2.style.color='aqua'
+        }
+
+    </script>
+    <a target="_blank" href="https://www.youtube.com/"><input type="button" value="Youtube"></a>
+</body>
+</html>

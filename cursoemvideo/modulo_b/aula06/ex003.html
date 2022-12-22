@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!--HTML5-->
+<html lang="pt-br"> <!--site está em português-->
+
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--Caracteres especiais-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Aula 06 de JS</title>
+
+        <style>
+            body{
+                background-color: rgb(161, 119, 103);
+            }
+            h1{
+                color: rgb(87, 28, 1);
+            }
+        </style>
+
+    </head>
+   
+    <body>
+        
+        <h1>Olá, mundo!</h1>
+        <p>Já me livrei da maldição</p> <!--cria parágrafo-->
+        <p>Já me livrei da maldição</p>
+        Já me livrei da maldição<br> <!--pula para a proxima linha-->
+        Já me livrei da maldição
+
+       
+    <script>
+        //prompt trata a variavel como string
+        var n1=Number(window.prompt('Write a number')) //conversão de string para number no prompt
+        var n2=Number(window.prompt('Write a second number')) // prompt = string
+        var soma=n1 + n2
+        window.alert('A soma dos valores é '+soma) // usar concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) // usar template string
+
+        /* (number + number) para adição
+        (string + string) para concatenação */
+
+        /* Number.parseInt() trata números inteiros
+        Number.parseFloat() trata números quebrados
+        Number() trata os dois tipos de números */
+
+        /* Conversão de Number para String
+        String()
+        n.toString() */
+
+        /* Formatando Strings
+        var nome = 'Erick'
+        var idade = '23'
+        var nota = 'MB'
+        var curso = 'JavaScript'
+
+        'O aluno '+nome+' com idade '+idade+' tirou '+nota // usar concatenação
+        O aluno Erick com idade 23 tirou MB
+         
+        `O aluno ${nome} com idade ${idade} tirou ${nota}` // usar template string
+        O aluno Erick com idade 23 tirou MB
+        
+        nome.length // quantos caracteres a string tem
+        nome.toUpperCase() //tudo para 'MAIÚSCULAS'
+        nome.toLowerCase() //tudo para 'minúsculas'
+        */
+
+    </script>
+    </body>
+
+    </html>

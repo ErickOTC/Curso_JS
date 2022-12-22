@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert()</title>
+</head>
+<body>
+    <script>
+        // 3 maneiras mesmo resultado
+        alert("1 modo: CFB Cursos - Curso de JS")
+
+        window.alert("2 modo: CFB Cursos - Curso de JS")
+
+        var curso= "CFB Cursos - Curso de JS"
+        alert('3 modo: '+curso)
+
+        var quebra="\n" // pula uma linha
+
+        var num= 100
+        var nuum2=50
+        alert(num+nuum2) //soma
+        alert(num+quebra+curso) //concatenação
+        alert(num+nuum2+quebra+curso) //soma depois concatena
+    </script>
+</body>
+</html>
